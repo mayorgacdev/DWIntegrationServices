@@ -15,16 +15,10 @@ BEGIN CATCH
 '
 GO
 ```
-* In the dimensions container charge connect the dim with the other
-* Double click in your Dimdate CHARGE DIMENSIONS
-* Select the origin OLEDB of sources
-* Select the OLEDB and connect with your origin database
-* Put your query in sql command and ok select distinct orderdate as idfech...
-* And now something most interesting the destiny of your query
-* Select the OLE DB destiny
-* Select your datawarehouse
-* select the table in this case the dim date
 
+**And now add other sequence container for charge de dimension Date**
+Due to the dimension doesn't need the historical change so you can use a ```ORIGIN OLDB Source``` and a 
+Other ```Destination Source``` : )
 
 and all it's ok
 
