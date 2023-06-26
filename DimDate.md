@@ -1,6 +1,6 @@
 * Create the table of your DimDate
 * Add the sequence container
-* Add two Task into the sequence container
+* Add a Task into the sequence container
 * Double click in ETL DimDate
 * Select the connection for your DWVeldax
 * Go to the sql statement
