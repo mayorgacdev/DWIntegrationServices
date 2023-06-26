@@ -5,12 +5,12 @@
 * Select the connection for your DWVeldax
 * Go to the sql statement
 ```
-EXEC SP_MSPFOREACTHABLE 
-'BEGIN 
-  TRY TRUNCATE TABLE YOURdimTABLE
- END 
- TRY CATCH 
-  DELETE FROM YOUdimTABLE
+EXEC SP_MSFOREACHTABLE 
+'BEGIN  TRY 
+TRUNCATE TABLE dbo.DimDate
+ END TRY 
+BEGIN CATCH 
+  DELETE FROM DimDate
  END CATCH
 '
 GO
