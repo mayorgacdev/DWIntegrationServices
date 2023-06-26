@@ -30,4 +30,17 @@ WHEN NOT MATCHED THEN
 Ok you added the first container for prepare your fact table of your datawarehouse but you need to charge it 
 
 * Add othet sql task in your new container sequence
-* Select the datawarehouse connection 
+* Select the datawarehouse connection
+
+ In the sql command you need to allow the constraint so let's go
+
+ 
+```
+EXEC SP_MSFOREACHTABLE 'ALTER TABLE ? CHECK CONSTRAINT ALL'
+GO
+EXEC SP_MSFOREACHTABLE 'ALTER TABLE ? ENABLE TRIGGER ALL'
+GO
+```
+
+and it's ok all end you need to hace four sequence container with four tables of sql task and other of your dimensions
+
