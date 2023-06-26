@@ -51,7 +51,7 @@ AND [ENDATE]='9999-12-31'
 as ```(DT_DBDATE)GetDate()```
 * Double click in your OLE DB Command
 and update the section of SqlCommand go to definition
-* Update with  `JUST UPDATE THE DATE` haha
+* Update with  `JUST UPDATE THE DATE` haha *='9999-12-31'*
 
 ```
 UDPATE 
