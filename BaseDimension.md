@@ -51,7 +51,7 @@ and update you 'CurrentRowWhere' and put
 AND [ENDATE]='9999-12-31'
 ```
 * In your derivative column click over EndDate and update 
-as GetDate()
+as ```(DT_DBDATE)GetDate()```
 * Double click in your OLE DB Command
 and update the section of SqlCommand go to definition
 * Update with
